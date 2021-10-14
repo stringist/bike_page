@@ -5,7 +5,7 @@
 
 :root {
     --grey: #6f6f6f;
-    --redbrown: #6a2c1f;
+    --redbrown: #733027;
     --fuglybrown: #5a3628;
     --sansfont: Arial, Helvetica, sans-serif;
     --altfont: "cinzel", serif, times;
@@ -24,20 +24,21 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     row-gap: 10vw;
-    column-gap: 6vw;
-    margin: 0 5% 0 5%;
+    column-gap: 4vw;
+    margin: 5% 2% 0 2%;
 }
 
 article {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    border: solid 1px black;
+    /* border: solid 1px black; */
     background-color: white;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 
-h2 {
+h2,
+.brandList {
     font-family: var(--altfont);
     font-weight: 400;
     font-size: 1.5rem;
@@ -53,9 +54,10 @@ h1.logo {
     font-family: var(--sansfont);
     text-align: center;
     text-transform: uppercase;
-    font-size: 1.2rem;
-    padding: .3rem;
-    width: 180px;
+    font-size: 1.4rem;
+    padding: .6rem;
+    width: 230px;
+    letter-spacing: .2rem;
 }
 
 ul {
@@ -66,7 +68,7 @@ button {
     color: var(--redbrown);
     background-color: #ffff;
     border: solid 1.5px var(--redbrown);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     padding: .2rem .5rem .2rem .5rem;
     margin: auto;
     text-transform: uppercase;
@@ -102,8 +104,23 @@ h2,
     color: #6f6f6f;
 }
 
-.red {
+.brandList {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0;
     color: var(--redbrown);
+    display: inline-flex;
+    /* border: solid 1px blue; */
+    font-family: var(--altfont);
+    font-size: 1.5rem;
+    gap: .5rem;
+}
+
+.carryList {
+    display: flex;
+    flex-wrap: wrap;
+    /* border: solid 1px pink; */
+    gap: 1rem;
 }
 
 .brand {
