@@ -13,7 +13,6 @@
 
 * {
     box-sizing: border-box;
-    font-family: var(--altfont);
 }
 
 body {
@@ -53,6 +52,14 @@ ul {
     color: var(--grey);
     font-family: var(--sansfont);
     font-style: italic;
+}
+
+ul.details>* {
+    color: black;
+}
+
+.details li>span {
+    color: var(--grey);
 }
 
 h2,
