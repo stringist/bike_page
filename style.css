@@ -8,10 +8,34 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    row-gap: 10vw;
+    column-gap: 6vw;
+    margin: 0 5% 0 5%;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px black;
+    background-color: white;
+}
+
+.name,
+.brand,
+.price,
+.stock,
+.color {
+    color: #6f6f6f;
 }
 
 img {
     width: 100%;
     height: auto;
+    order: -2;
+}
+
+section.brandName {
+    border-bottom: solid 1.5px grey;
+    margin: 0 2% 0 2%;
 }
