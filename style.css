@@ -17,6 +17,7 @@
 
 body {
     background-color: #f2efea;
+    margin: 2%;
 }
 
 main {
@@ -46,8 +47,15 @@ h3 {
     margin: 0;
 }
 
-.logo {
-    color: white;
+h1.logo {
+    color: #ffffff;
+    background-color: #18110b;
+    font-family: var(--sansfont);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: .3rem;
+    width: 180px;
 }
 
 ul {
