@@ -1,0 +1,1 @@
+fetch("http://lumensity.dk/recreate/wp-json/wp/v2/bike");
