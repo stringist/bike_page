@@ -1,5 +1,19 @@
+@font-face {
+    font-family: "cinzel";
+    src: url("/fonts/Cinzel-VariableFont_wght.ttf");
+}
+
+:root {
+    --grey: #6f6f6f;
+    --redbrown: #6a2c1f;
+    --fuglybrown: #5a3628;
+    --sansfont: Arial, Helvetica, sans-serif;
+    --altfont: "cinzel", serif, times;
+}
+
 * {
     box-sizing: border-box;
+    font-family: var(--altfont);
 }
 
 body {
@@ -21,12 +35,47 @@ article {
     background-color: white;
 }
 
+h2 {
+    font-family: var(--altfont);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+h3 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.details {
+    color: var(--grey);
+    font-family: var(--sansfont);
+    font-style: italic;
+}
+
+h2,
 .name,
 .brand,
 .price,
 .stock,
 .color {
     color: #6f6f6f;
+}
+
+.red {
+    color: var(--redbrown);
+}
+
+.brand {
+    font-family: var(--sansfont);
+}
+
+.name {
+    font-family: var(--altfont);
+    font-weight: 400;
+    font-size: 1.5rem;
 }
 
 img {
