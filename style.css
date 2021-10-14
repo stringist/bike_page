@@ -125,13 +125,15 @@ h2,
 
 .brand {
     font-family: var(--sansfont);
-    font-size: .8rem;
+    font-size: 1rem;
+    text-transform: uppercase;
 }
 
 .name {
     font-family: var(--altfont);
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
 }
 
 img {
