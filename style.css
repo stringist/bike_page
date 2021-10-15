@@ -86,13 +86,18 @@ ul.details {
     margin: 1rem 0rem 1rem 0;
 }
 
-ul.details>* {
+ul.details * {
     color: black;
 }
 
-.details li>span {
+.details li {
     font-family: var(--sansfont);
     color: var(--grey);
+}
+
+.altFont {
+    color: #000000;
+    font-family: var(--altfont);
 }
 
 h2,
