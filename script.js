@@ -25,7 +25,9 @@ function showData(oneBike) {
     // copy.querySelector("img").src = " oneBike._embedded["wp:featuredmedia"][0].media_details.sizes.large.source_url";
     copy.querySelector(".price").textContent = oneBike.price;
     copy.querySelector(".color").textContent = oneBike.colors;
-    copy.querySelector(".stock").textContent = oneBike.in_stock;
+    //copy.querySelector(".stock").textContent = oneBike.in_stock;
+    console.log(oneBike.in_stock)
+    if (oneBike.in_stock == '1') { copy.querySelector(".stock").textContent = "yes" }
     // oneBike.colors.forEach(color => {
     //     const li = document.createElement("li");
     //     li.style.background = color;
