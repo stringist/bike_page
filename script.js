@@ -36,16 +36,17 @@ function showData(oneBike) {
     // const colorList = colors.split(",");
     copy.querySelector("h3.brand").textContent = oneBike.brand;
     copy.querySelector("h3.name").textContent = oneBike.title.rendered;
+    // copy.querySelector("img").setAttribute("src", oneBike._embedded["wp:featuredmedia"][0].media_details.sizes.large.source_url);
     copy.querySelector("img").setAttribute("src", oneBike._embedded["wp:featuredmedia"][0].media_details.sizes.large.source_url);
     // copy.querySelector("img").src = " oneBike._embedded["wp:featuredmedia"][0].media_details.sizes.large.source_url";
     copy.querySelector(".price").textContent = oneBike.price;
-    copy.querySelector(".color").textContent = oneBike.colors;
+    // copy.querySelector(".color").textContent = oneBike.colors;
     //copy.querySelector(".stock").textContent = oneBike.in_stock;
 
     const colors = oneBike.colors.split(',')
     colors.forEach(color => {
         const li = document.createElement('li')
-        li.textContent = color;
+            // li.textContent = color;
         li.style.background = color
         copy.querySelector('.colorbox ul').appendChild(li)
     })
