@@ -21,7 +21,8 @@ function showData(oneBike) {
     const copy = template.cloneNode(true);
     copy.querySelector("h3.brand").textContent = oneBike.brand;
     copy.querySelector("h3.name").textContent = oneBike.title.rendered;
-    copy.querySelector("img").src = oneBike._links["wp:featuredmedia"][0].href;
+    copy.querySelector("img").setAttribute("src", oneBike._embedded["wp:featuredmedia"][0].media_details.sizes.large.source_url);
+    // copy.querySelector("img").src = " oneBike._embedded["wp:featuredmedia"][0].media_details.sizes.large.source_url";
     copy.querySelector("li.price").textContent = "Price - " + oneBike.price;
     copy.querySelector("li.color").textContent = "Colours - " + oneBike.colors;
     copy.querySelector("li.stock").textContent = "In Stock - " + oneBike.in_stock;
@@ -32,6 +33,5 @@ function showData(oneBike) {
     // })
 
     const parent = document.querySelector("main");
-    //append}
     parent.appendChild(copy);
 }
