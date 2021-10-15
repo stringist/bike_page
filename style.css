@@ -35,6 +35,13 @@ article {
     /* border: solid 1px black; */
     background-color: white;
     padding-bottom: 2rem;
+    transition: all .2s;
+    filter: opacity(80%);
+}
+
+article:hover {
+    transform: scale(1.005);
+    filter: opacity(100%);
 }
 
 h2,
@@ -72,6 +79,13 @@ button {
     padding: .2rem .5rem .2rem .5rem;
     margin: auto;
     text-transform: uppercase;
+    transition: all .5s;
+}
+
+button:hover {
+    color: #ffff;
+    background-color: var(--redbrown);
+    transform: scale(1.05);
 }
 
 ul.details {
@@ -81,6 +95,12 @@ ul.details {
     font-size: 1.1rem;
     font-weight: lighter;
 }
+
+
+/* .colorbox {
+    width: 10px;
+    height: 10px;
+} */
 
 .details>li {
     margin: 1rem 0rem 1rem 0;
@@ -109,12 +129,22 @@ h2,
     color: #6f6f6f;
 }
 
+.colorbox {
+    display: flex;
+}
+
+.colorbox>li {
+    width: 10px;
+    height: 10px;
+}
+
 .brandList {
     margin-top: auto;
     margin-bottom: auto;
     padding: 0;
     color: var(--redbrown);
     display: inline-flex;
+    flex-wrap: wrap;
     /* border: solid 1px blue; */
     font-family: var(--altfont);
     font-size: 1.5rem;
