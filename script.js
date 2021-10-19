@@ -1,6 +1,6 @@
 const urlParams = new URLSearchParams(window.location.search);
 const bikename = urlParams.get("title.rendered");
-const endpoint = "http://lumensity.dk/recreate/wp-json/wp/v2/bike?_embed"
+const endpoint = "https://lumensity.dk/recreate/wp-json/wp/v2/bike?_embed"
 
 
 fetch(endpoint)
